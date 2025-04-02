@@ -1434,7 +1434,7 @@ sparsechunk_converter() {
 	       echo -e "${R}Conversion Failed!"
 	       echo -e "${NC}"
 	   fi
-	else if [[ -f $DIRIN/images/super.img.0 ]]; then
+	if [[ -f $DIRIN/images/super.img.0 ]]; then
 	   echo ""
 	   echo "Converting sparsechunk image into raw image"
 	   simg2img $DIRIN/images/super.img.* $DIROUT/super.img
